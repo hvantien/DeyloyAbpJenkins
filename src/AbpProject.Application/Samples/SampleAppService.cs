@@ -10,7 +10,7 @@ namespace AbpProject.Samples
             return Task.FromResult(
                 new SampleDto
                 {
-                    Value = 42
+                    Value = 43
                 }
             );
         }
@@ -21,7 +21,7 @@ namespace AbpProject.Samples
             return Task.FromResult(
                 new SampleDto
                 {
-                    Value = 42
+                    Value = 43
                 }
             );
         }
