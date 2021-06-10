@@ -173,6 +173,10 @@ namespace AbpProject
 
         private void ConfigureVirtualFileSystem(IWebHostEnvironment hostingEnvironment)
         {
+            Configure<AbpVirtualFileSystemOptions>(options =>
+            {
+                options.FileSets.AddEmbedded<AbpProjectWebModule>("AbpProject.Web");
+            });
             if (hostingEnvironment.IsDevelopment())
             {
                 Configure<AbpVirtualFileSystemOptions>(options =>
